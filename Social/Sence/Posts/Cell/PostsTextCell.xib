@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostsTextCell" rowHeight="158" id="S35-Uk-hiJ" customClass="PostsTextCell" customModule="Social" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="158"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S35-Uk-hiJ" id="j4W-mN-Cvr">
+                <rect key="frame" x="0.0" y="0.0" width="356" height="158"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJi-W4-6q3">
+                        <rect key="frame" x="0.0" y="111" width="356" height="1"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="4Hg-jl-TdV"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PoP-DS-Cv4">
+                        <rect key="frame" x="20" y="20" width="43.5" height="21.5"/>
+                        <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBL-Mo-uGs">
+                        <rect key="frame" x="20" y="124" width="22" height="23"/>
+                        <state key="normal" image="ic-like"/>
+                        <connections>
+                            <action selector="addLikeBtn:" destination="S35-Uk-hiJ" eventType="touchUpInside" id="ZxP-hb-DgP"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z45-g9-AEG">
+                        <rect key="frame" x="327" y="125.5" width="9" height="21.5"/>
+                        <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qgQ-zC-f9r">
+                        <rect key="frame" x="0.0" y="53.5" width="356" height="1"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="xIJ-Pi-Arx"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VpB-Rg-OQm">
+                        <rect key="frame" x="20" y="64.5" width="43.5" height="21.5"/>
+                        <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PoP-DS-Cv4" firstAttribute="leading" secondItem="j4W-mN-Cvr" secondAttribute="leading" constant="20" id="0wC-xW-au4"/>
+                    <constraint firstItem="eJi-W4-6q3" firstAttribute="leading" secondItem="j4W-mN-Cvr" secondAttribute="leading" id="2IV-0e-0Ka"/>
+                    <constraint firstItem="PoP-DS-Cv4" firstAttribute="top" secondItem="j4W-mN-Cvr" secondAttribute="top" constant="20" id="2Q1-v3-kAr"/>
+                    <constraint firstItem="VpB-Rg-OQm" firstAttribute="leading" secondItem="j4W-mN-Cvr" secondAttribute="leadingMargin" id="2uw-o3-p2h"/>
+                    <constraint firstItem="GBL-Mo-uGs" firstAttribute="leading" secondItem="j4W-mN-Cvr" secondAttribute="leadingMargin" id="40Y-1A-1zY"/>
+                    <constraint firstItem="GBL-Mo-uGs" firstAttribute="top" secondItem="eJi-W4-6q3" secondAttribute="bottom" constant="12" id="Dcm-i7-M7N"/>
+                    <constraint firstAttribute="trailing" secondItem="qgQ-zC-f9r" secondAttribute="trailing" id="EEG-5n-yrv"/>
+                    <constraint firstItem="GBL-Mo-uGs" firstAttribute="bottom" secondItem="j4W-mN-Cvr" secondAttribute="bottomMargin" id="Xjc-6H-uGo"/>
+                    <constraint firstAttribute="trailing" secondItem="eJi-W4-6q3" secondAttribute="trailing" id="dKU-bT-5pR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="z45-g9-AEG" secondAttribute="trailing" id="dt5-bz-shJ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="z45-g9-AEG" secondAttribute="bottom" id="lEk-6Y-c5W"/>
+                    <constraint firstItem="qgQ-zC-f9r" firstAttribute="top" secondItem="PoP-DS-Cv4" secondAttribute="bottom" constant="12" id="pNb-2V-oM5"/>
+                    <constraint firstItem="eJi-W4-6q3" firstAttribute="top" secondItem="VpB-Rg-OQm" secondAttribute="bottom" constant="25" id="u27-WE-gPY"/>
+                    <constraint firstItem="VpB-Rg-OQm" firstAttribute="top" secondItem="qgQ-zC-f9r" secondAttribute="bottom" constant="10" id="vIX-B8-2ov"/>
+                    <constraint firstItem="qgQ-zC-f9r" firstAttribute="leading" secondItem="j4W-mN-Cvr" secondAttribute="leading" id="yyH-hT-NAs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="XCQ-BD-zxc"/>
+            <connections>
+                <outlet property="descriptionTxt" destination="VpB-Rg-OQm" id="O42-5D-jKG"/>
+                <outlet property="likeBtn" destination="GBL-Mo-uGs" id="9LP-rO-Bl5"/>
+                <outlet property="likeCount" destination="z45-g9-AEG" id="LDr-Iu-Isc"/>
+                <outlet property="userName" destination="PoP-DS-Cv4" id="3lG-Mx-cOe"/>
+            </connections>
+            <point key="canvasLocation" x="163.768115942029" y="46.875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic-like" width="22" height="19"/>
+    </resources>
+</document>
